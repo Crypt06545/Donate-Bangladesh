@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    body {
+      font-family: "Lexend";
+    }
+  </style>
+  <body>
+    <header class="">
+      <!--  Navbar -->
+      <nav class="sticky top-0 z-10 bg-[#F9F7F3] py-4 h-24">
+        <div
+          class="container mx-auto flex justify-between items-center px-4 md:px-8"
+        >
+          <!-- Blog Button -->
+          <a
+            href="./blog.html"
+            class="bg-[#B4F461] text-black font-semibold rounded-md px-5 py-2 hover:bg-lime-400"
+          >
+            Blog
+          </a>
+
+          <!-- Donate Bangladesh -->
+          <div class="flex items-center space-x-2">
+            <img
+              src="./assets/logo.png"
+              alt="Donate Bangladesh"
+              class="w-10 h-10"
+            />
+            <span class="text-gray-800 font-semibold text-xl"
+              >Donate Bangladesh</span
+            >
+          </div>
+
+          <!-- Price Section -->
+          <div class="flex items-center space-x-1 text-amber-600">
+            <span><img src="./assets/coin.png" alt="coin ima" /></span>
+            <span class="font-bold">10500 BDT</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- donate and history button section start  -->
+    <sectio class="flex justify-center items-center gap-4 mt-14">
+      <button id="donate-btn" class="btn bg-[#B4F461] w-28 text-black">Donation</button>
+      <button id="history-btn" class="btn bg-[#B4F461] w-28 text-black">History</button>
+    </sectio>
+    <!-- donate and history button section end -->
+  </body>
+</html>
