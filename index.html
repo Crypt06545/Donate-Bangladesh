@@ -64,14 +64,14 @@
       <div class="flex justify-center items-center gap-4 mt-4">
         <!-- Adjusted mt-4 for gap -->
         <button
-          id="donate-btn"
-          class="bg-[#B4F461] w-28 text-black rounded-md py-2"
+          id="donate-btn-tab"
+          class="bg-[#B4F461] w-28 font-semibold text-black rounded-md py-2"
         >
           Donation
         </button>
         <button
           id="history-btn"
-          class="bg-[#B4F461] w-28 text-black rounded-md py-2"
+          class="border-2 w-28 font-semibold text-gray-500 rounded-md py-2"
         >
           History
         </button>
@@ -87,7 +87,11 @@
       <!-- history section end -->
 
       <!-- empty history  -->
-
+      <div id="empty-history" class="hidden my-8 p-6 w-4/5 mx-auto text-center text-gray-500 border-2 border-dashed border-gray-300 rounded-md">
+        <div class="flex justify-center items-center my-4" ><img src="./assets/prohibited.png" class="w-32" alt=""></div>
+        <h2 class="text-2xl font-semibold mb-4">No Transactions Yet</h2>
+        <p class="text-lg">Start donating to see your transaction history here.</p>
+      </div>
       <!-- Modal Structure -->
       <div>
         <!-- Open the modal using ID.showModal() method -->
@@ -277,7 +281,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-[#F9F7F3] h-24"></footer>
+    <footer class="bg-[#F9F7F3] h-24 "></footer>
     <script src="./js/index.js"></script>
   </body>
 </html>

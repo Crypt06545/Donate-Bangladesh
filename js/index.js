@@ -15,6 +15,8 @@ const quotaAmountElement = document.getElementById("quota-amount");
 const donationHistorySection = document.getElementById("donation-history");
 const historyBtn = document.getElementById("history-btn");
 
+const donateBtnTab = document.getElementById("donate-btn-tab");
+
 // Add click event listeners to the donation buttons
 dNoakhali.addEventListener("click", function () {
   donation(
@@ -76,9 +78,30 @@ function donation(inputElement, balanceElement, amountElement, location) {
   }
 }
 
-// Toggle history section visibility
+// Toggle history section
 historyBtn.addEventListener("click", function () {
   donationHistorySection.classList.remove("hidden");
+  const donationListadd = document.getElementById("donation-li");
+  donationListadd.classList.add("hidden");
+
+  historyBtn.classList.add("bg-[#B4F461]", "text-black");
+  historyBtn.classList.remove("border-2", "text-gray-500");
+
+  donateBtnTab.classList.remove("bg-[#B4F461]", "text-black");
+  donateBtnTab.classList.add("border-2", "text-gray-500");
+});
+
+// Toggle donation section
+donateBtnTab.addEventListener("click", function () {
+  donationHistorySection.classList.add("hidden");
+  const donationListadd = document.getElementById("donation-li");
+  donationListadd.classList.remove("hidden");
+
+  donateBtnTab.classList.add("bg-[#B4F461]", "text-black");
+  donateBtnTab.classList.remove("border-2", "text-gray-500");
+
+  historyBtn.classList.remove("bg-[#B4F461]", "text-black");
+  historyBtn.classList.add("border-2", "text-gray-500");
 });
 
 // Add donation history entry
