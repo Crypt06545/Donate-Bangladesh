@@ -15,6 +15,19 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMI1tt5V35pZkfF+n7WjKykI5EV2f8CQOfHXo8g"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <style>
@@ -23,11 +36,9 @@
     }
   </style>
   <body>
-    <header
-      class="sticky top-0 z-50 transition-all duration-300 bg-[#F9F7F3] bg-opacity-90 py-4"
-    >
+    <header class="sticky top-0 z-50 backdrop-blur-lg bg-opacity-5">
       <!-- Navbar -->
-      <nav class="bg-transparent py-4 h-24">
+      <nav class="bg-[#fcf3e1] py-4 h-24">
         <div
           class="container mx-auto flex justify-between items-center px-4 md:px-8"
         >
@@ -44,9 +55,9 @@
             <img
               src="./assets/logo.png"
               alt="Donate Bangladesh"
-              class="w-10 h-10"
+              class="w-10 h-10 ml-4"
             />
-            <span class="text-gray-800 font-semibold text-xl"
+            <span class="text-gray-800 font-semibold lg:text-xl"
               >Donate Bangladesh</span
             >
           </div>
@@ -61,8 +72,10 @@
       </nav>
 
       <!-- Donate and History button start -->
-      <div class="flex justify-center items-center gap-4 mt-4">
-        <!-- Adjusted mt-4 for gap -->
+      <div
+        class="sticky top-24 z-40 flex justify-center items-center gap-4 mt-4"
+      >
+        <!-- Buttons will have the blur effect behind them -->
         <button
           id="donate-btn-tab"
           class="bg-[#B4F461] w-28 font-semibold text-black rounded-md py-2"
@@ -82,19 +95,18 @@
       <!-- history section start  -->
       <section
         id="donation-history"
-        class="hidden my-8 p-4 w-4/5 mx-auto"
+        class="hidden my-8 p-4 w-4/5 mx-auto h-80"
       ></section>
       <!-- history section end -->
 
       <!-- empty history  -->
-      <div id="empty-history" class="hidden my-8 p-6 w-4/5 mx-auto text-center text-gray-500 border-2 border-dashed border-gray-300 rounded-md">
+      <!-- <div id="empty-history" class=" my-10 p-6 w-4/5 mx-auto text-center text-gray-500 border-2 border-dashed border-gray-300 rounded-md">
         <div class="flex justify-center items-center my-4" ><img src="./assets/prohibited.png" class="w-32" alt=""></div>
         <h2 class="text-2xl font-semibold mb-4">No Transactions Yet</h2>
         <p class="text-lg">Start donating to see your transaction history here.</p>
-      </div>
+      </div> -->
       <!-- Modal Structure -->
       <div>
-        <!-- Open the modal using ID.showModal() method -->
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box text-center">
             <h3 class="text-4xl font-bold">Congrates!</h3>
@@ -281,7 +293,7 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-[#F9F7F3] h-24 "></footer>
+    <div class="bg-[#fcf3e1] h-24 mt-60"></div>
     <script src="./js/index.js"></script>
   </body>
 </html>
